@@ -15,4 +15,30 @@ $govuk-assets-path: '/govuk/assets/';
 @import "patterns/task-list";
 @import "patterns/related-items";
 
-// Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+ol.gcweb-list--numbered-solid  {
+    counter-reset: li;
+    list-style: none;
+    *list-style: decimal;
+    padding-left: 0px;
+}
+ol.gcweb-list--numbered-solid  li {
+    position: relative;
+    padding-left: 40px;
+    min-height: 35px;
+}
+ol.gcweb-list--numbered-solid  li:before {
+    content: counter(li);
+    counter-increment: li;
+    color: #fff;
+    background: #1b1c1c;
+    border-radius: 50%;
+    font-size: 16px;
+    width: 24px;
+    height: 24px;
+    line-height: 22px;
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}// Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
