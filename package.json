@@ -53,5 +53,20 @@
   },
   "jest": {
     "testRunner": "jest-jasmine2"
-  }
+  },
+  "main": "gulpfile.js",
+  "directories": {
+    "doc": "docs",
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DFE-Digital/standardsv2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DFE-Digital/standardsv2/issues"
+  },
+  "homepage": "https://github.com/DFE-Digital/standardsv2#readme"
 }
