@@ -1,0 +1,162 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Blank page
+{% endblock %}
+
+{% block content %}
+<a href="index.html" class="govuk-back-link">Back</a>
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-l">
+      Cyber security standards for schools and colleges
+      <span class="govuk-caption-m">{{releaseVersion}}</span>
+    </h1>{{releaseVersion | log }}
+
+    <p>Find out what standards your school or college should meet on cyber security, user accounts and data protection.</p>
+
+<div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+  <div class="govuk-accordion__section ">
+    <div class="govuk-accordion__section-header">
+      <h2 class="govuk-accordion__section-heading">
+        <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+          Protect all devices on every network with a properly configured boundary or software firewall.
+        </span>
+      </h2>
+    </div>
+    <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+<h2 class="govuk-heading-s">Importance of meeting the standard</h2>
+<p> Properly configured firewalls prevent many attacks. They also make scanning for suitable hacking targets much harder.</p>
+
+
+<h2 class="govuk-heading-s">How to meet the standard</h2>
+
+<p> Ask your IT service provider to set up your devices to meet the standards described in the technical requirements.<br><br>
+
+Your IT service provider may be a staff technician or an external service provider.<br><br>
+
+Remember that this standard may change over time with changing cyber threats.</p>
+
+<h2 class="govuk-heading-s">Technical requirements to meet the standard</h2>
+<p> To meet this standard you must:
+
+<ul class="govuk-list govuk-list--bullet">
+  <li>protect every device with a correctly configured boundary, or software firewall, or a device that performs the same function</li>
+<li>change the default administrator password, or disable remote access on each firewall</li>
+<li>protect access to the firewall’s administrative interface with multi-factor authentication (MFA), or a small specified IP-allow list combined with a managed password, or prevent access from the internet entirely</li>
+<li>block inbound unauthenticated connections by default</li>
+<li>approve and document the reasons for allowed inbound traffic firewall rules</li>
+<li>review allowed inbound firewall rules often, change the rule when access is no longer needed </li>
+<li>devices used on untrusted networks, like public wi-fi, should have a software firewall</li>
+</ul>
+</p>
+<h2 class="govuk-heading-s">Dependencies to the standard</h2>
+
+<p> DfE internet standards.</p>
+<h2 class="govuk-heading-s">When to meet the standard</h2>
+
+<p> You should already be meeting this standard for the security of your networks. This should be reviewed with the addition of each device to your network.</p>
+
+    </div>
+  </div>
+  <div class="govuk-accordion__section ">
+    <div class="govuk-accordion__section-header">
+      <h2 class="govuk-accordion__section-heading">
+        <span class="govuk-accordion__section-button" id="accordion-default-heading-2">
+         Network devices, such as routers, switches and servers, should be known and recorded. Their security features should be enabled and correctly configured.
+        </span>
+      </h2>
+    </div>
+    <div id="accordion-default-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-2">
+
+<h2 class="govuk-heading-s">Importance of meeting the standard</h2>
+<p> Security systems are sometimes disabled to make very marginal improvements to user experience. This is an unjustifiable risk calculation in most circumstances.<br><br>
+
+Attackers scan for and exploit devices where the security features are not enabled. Using the security features that devices already have is the most basic form of cyber security.<br><br>
+
+Attackers who gain physical access to a network device can exploit a system much more easily, so this should be prevented.
+</p>
+
+<h2 class="govuk-heading-s">How to meet the standard</h2>
+<p> Ask your IT service provider to record and set up your devices and BIOS to meet the technical requirements.<br><br> 
+
+Your IT service provider may be a staff technician or an external service provider. <br><br>
+
+Remember that this standard may change over time with changing cyber threats.<br><br>
+
+The National Cyber Security Centre has published guidance on:
+<ul class="govuk-list govuk-list--bullet">
+  <li><a href="https://www.ncsc.gov.uk/collection/device-security-guidance">managing devices</a></li>
+  <li><a href="https://www.ncsc.gov.uk/collection/device-security-guidance/managing-deployed-devices/logging-and-protective-monitoring">logging and protectivemonitoring</a></li>
+</ul>
+
+</p>
+
+<h2 class="govuk-heading-s">Technical requirements to meet the standard</h2>
+<p> To meet this standard you must:
+<ul class="govuk-list govuk-list--bullet">
+<li>keep a register, list or network diagram with all the devices in your network or network segment, if the network is larger than one institution</li>
+<li>make a choice about which features to use on your network if network devices have conflicting security features</li>
+<li>remove or disable unused user accounts, including guest and unused administrator accounts</li>
+<li>change default passwords</li>
+<li>remove or disable all unnecessary software according to your organisational need</li>
+<li>disable any auto-run features that allow file execution without user authorisation</li>
+<li>set up filtering and monitoring services to work with the network’s security features enabled</li>
+<li>require user authentication to access organisational services or data, for instance, only allow viewing of public-facing data</li>
+<li>immediately change passwords which have been compromised or suspected of compromise</li>
+<li>protect against a brute-force attack on all passwords by allowing no more than 10 guesses in 5 minutes, or locking devices after no more than 10 unsuccessful attempts</li>
+</ul>
+
+<p>You can use a password or PIN of at least 6 characters to physically access switches, BIOS settings on end-user devices and similar. The password or PIN must only be used to access this device.<br><br>
+
+For all other devices, you must enforce password strength at the system level. If you use a deny list for automatic blocking of common passwords, use a password with at least 8 characters. Or, use a password with at least 12 characters or a biometric test.<br><br>
+
+Password manager software is recommended.<br><br>
+
+The National Cyber Security Centre provides detailed guidance on:
+<ul class="govuk-list govuk-list--bullet">
+  <li><a href="https://www.ncsc.gov.uk/collection/device-security-guidance">best practice</a></li>
+  <li><a href="https://www.ncsc.gov.uk/collection/passwords">password administration for system owners</a></li>
+  <li><a href="https://www.ncsc.gov.uk/collection/device-security-guidance/platform-guides">securing your devices</a></li>
+  <li><a href="https://www.ncsc.gov.uk/blog-post/the-logic-behind-three-random-words">the logic behind three random words</a></li>
+</ul>
+
+</p>
+<h2 class="govuk-heading-s">Dependencies to the standard</h2>
+
+<p> None known.</p>
+
+<h2 class="govuk-heading-s">When to meet the standard</h2>
+
+<p> You should already be meeting this standard.</p>
+  </div>
+  </div>
+  <div class="govuk-accordion__section ">
+    <div class="govuk-accordion__section-header">
+      <h2 class="govuk-accordion__section-heading">
+        <span class="govuk-accordion__section-button" id="accordion-default-heading-3">
+          New cabling should be installed and tested in line with the manufacturer’s guidance, warranty terms, and conditions
+      </span>
+      </h2>
+    </div>
+    <div id="accordion-default-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">
+    <h2 class="govuk-heading-s">Importance of meeting the standard</h2>
+    <p> The quality and specification of your school’s or college’s cabling (passive infrastructure) plays a critical role in making sure that data is transferred around the school or college. Faulty or low specification cabling will have a negative impact on the quality of network performance.
+</p>
+<h2 class="govuk-heading-s">How to meet the standard</h2>
+<p> You should confirm with your supplier or in-house support team that all new cabling complies with the relevant British Standards 6701, 50173 and 50174 which cover the specification, installation, operation and maintenance of network cabling.<br><br>
+
+Cables should be installed by manufacturer approved installation partners, with the relevant network infrastructure installed accreditations.<br><br>
+
+The network infrastructure installer should also provide a detailed test report showing successful test results for all the installed network cables, based on the test limits defined in British Standards 50173.</p>
+
+<h2 class="govuk-heading-s">Technical requirements to meet the standard</h2>
+<p> A minimum 20-year manufacturer’s performance warranty should be provided for the complete cabling system.</p>
+<h2 class="govuk-heading-s">When to meet the standard</h2>
+<p> You should meet the standard when you need to replace your current solution that is underperforming, unsupported and in new school or college building projects.</p>
+</div>
+
+    </div>
+  </div>
+
+{% endblock %}
